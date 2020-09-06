@@ -1,0 +1,57 @@
+actions:
+- action_weather
+- utter_ask_location
+- utter_creator_challenge
+- utter_default
+- utter_goodbye
+- utter_greet
+- utter_help
+- utter_iamabot
+- utter_out_of_scope
+- utter_welcome
+entities:
+- location
+intents:
+- inform
+- creator_challenge
+- bot_challenge
+- goodbye
+- greet
+- out_of_scope
+- no_response_required
+- thanks
+- inform_no_location
+- inform_location
+- dont_understand
+responses:
+  utter_ask_location:
+  - text: For what location?
+  utter_creator_challenge:
+  - text: I am not permitted to disclose that information, though I can tell you that
+      my creator is a human
+  utter_default:
+  - text: Sorry, I don't understand what you mean
+  utter_goodbye:
+  - text: Bye
+  - text: Goodbye
+  - text: See you around
+  utter_greet:
+  - text: Hey
+  - text: Hi
+  - text: Hello
+  - text: Hey there
+  - text: Howdy
+  utter_help:
+  - text: How can I help you?
+  - text: Can I help you with some weather forecasts? I'm the best in the business.
+  utter_iamabot:
+  - text: I am a bot, but as real as any other human creation like money or time
+  utter_out_of_scope:
+  - text: 'Sorry, but my creator has not taught me how to answer such kind of questions '
+  utter_welcome:
+  - text: You are welcome
+  - text: Anytime
+  - text: I got you
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
