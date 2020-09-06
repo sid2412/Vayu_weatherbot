@@ -17,7 +17,6 @@
 - later
 - thanks, bye
 - thanks for the help, bye
-- vfjaejkebdjed
 
 ## intent:inform
 - What's the weather in [Toronto](location) at the moment?
@@ -37,7 +36,6 @@
 - Tell me the weather forecast for [Barcelona](location)
 - Tell me the weather forecast for [Ottawa](location)
 - Tell me the weather forecast for [Montreal](location)
-- rkngreaonorvean
 - tell me the weather in [London](location)
 - what is the weather in [Pretoria](location) at the moment?
 
