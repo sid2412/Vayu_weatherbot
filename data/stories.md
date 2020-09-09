@@ -48,6 +48,41 @@
 * goodbye
   - utter_goodbye
 
+## ask for humidity
+* greet
+  - utter_greet
+  - utter_help
+* inform_location
+  - action_weather
+* inform_humidity
+  - action_humidity
+* thanks
+  - utter_welcome
+
+## ask for wind_speed
+* greet
+  - utter_greet
+  - utter_help
+* inform_location
+  - action_weather
+* inform_wind_speed
+  - action_wind_speed
+* thanks
+  - utter_welcome
+
+## ask for humidity and wind_speed
+* greet
+  - utter_greet
+  - utter_help
+* inform_location
+  - action_weather
+* inform_humidity
+  - action_humidity
+* inform_wind_speed
+  - action_wind_speed
+* thanks
+  - utter_welcome
+
 ## interactive_story_1
 * greet
     - utter_greet
@@ -105,7 +140,6 @@
 * greet
     - utter_greet
     - utter_help
-    - utter_default
 
 ## interactive_story_2
 * greet
@@ -130,3 +164,21 @@
     - utter_welcome
 * goodbye
     - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+    - utter_help
+* inform_no_location
+    - utter_ask_location
+* inform_location{"location": "Budapest"}
+    - slot{"location": "Budapest"}
+    - action_weather
+* inform_humidity
+    - action_humidity
+    - slot{"location": "Budapest"}
+* inform_wind_speed
+    - action_wind_speed
+* no_response_required
+* thanks
+    - utter_welcome

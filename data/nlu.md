@@ -52,6 +52,7 @@
 - weather?
 - can you help with a weather forecast?
 - Tell me the weather forecast for [Berlin](location)
+- what is the weather?
 
 ## intent:inform_location
 - [Vancouver](location)
@@ -65,6 +66,19 @@
 - [Calgary](location)
 - [New York](location)
 - [Pune](location)
+- [Budapest](location)
+
+## intent:inform_humidity
+- what is the humidity?
+- how is the humidity?
+- can you tell me the humidity in [Vancouver][location]
+- what about the humidity?
+
+## intent:inform_wind_speed
+- what about the wind speed?
+- how is the wind speed?
+- can you tell me the wind speed in [Toronto][location]
+- and the wind speed?
 
 ## intent:thanks
 - thank you
@@ -100,6 +114,7 @@
 - that's great
 - okay
 - let's get back to weather
+- that is great
 
 ## intent:creator_challenge
 - Who is your creator?
