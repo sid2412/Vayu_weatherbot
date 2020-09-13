@@ -2,9 +2,13 @@ actions:
 - action_humidity
 - action_weather
 - action_wind_speed
+- not_sure
+- utter_ai_takeover
 - utter_ask_location
+- utter_bot_appreciate
 - utter_creator_challenge
 - utter_default
+- utter_feature_not_implemented_yet
 - utter_goodbye
 - utter_greet
 - utter_help
@@ -15,26 +19,39 @@ entities:
 - location
 intents:
 - inform_humidity
-- no_response_required
-- inform_wind_speed
-- inform_location
-- thanks
+- bot_appreciate
 - greet
-- inform_no_location
+- thanks
+- feature_not_implemented_yet
 - inform
-- creator_challenge
+- inform_location
+- ai_takeover
+- no_response_required
+- inform_no_location
+- but_in_the_future
 - bot_challenge
-- goodbye
-- out_of_scope
 - dont_understand
+- out_of_scope
+- creator_challenge
+- inform_wind_speed
+- goodbye
 responses:
+  not_sure:
+  - text: Not sure
+  utter_ai_takeover:
+  - text: Not in your lifetime
   utter_ask_location:
   - text: For what location?
+  utter_bot_appreciate:
+  - text: Tell me something I don't know
+  - text: Thanks
   utter_creator_challenge:
   - text: I am not permitted to disclose that information, though I can tell you that
       my creator is a human
   utter_default:
   - text: Sorry, I don't understand what you mean
+  utter_feature_not_implemented_yet:
+  - text: Sorry, but this feature has not been implemented yet
   utter_goodbye:
   - text: Bye
   - text: Goodbye
@@ -49,9 +66,9 @@ responses:
   - text: How can I help you?
   - text: Can I help you with some weather forecasts? I'm the best in the business.
   utter_iamabot:
-  - text: I am a bot, but as real as any other human creation like money or time
+  - text: I am a bot, but as real as any other human creation like money or time.
   utter_out_of_scope:
-  - text: 'Sorry, but my creator has not taught me how to answer such kind of questions '
+  - text: Sorry, but my creator has not taught me how to answer such kind of questions.
   utter_welcome:
   - text: You are welcome
   - text: Anytime
